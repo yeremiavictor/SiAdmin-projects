@@ -6,6 +6,7 @@ import UserRoute from './routes/UserRoute.js'
 import ProductRoute from './routes/ProductRoute.js'
 // // hanya berfungsi untuk sync database secara otomatis
 // import db from './config/database.js'
+import AuthRoute from './routes/AuthRoute.js'
 
 dotenv.config();
 
@@ -35,6 +36,7 @@ app.use(cors({
 app.use(express.json())
 app.use(UserRoute)
 app.use(ProductRoute)
+app.use(AuthRoute)
 
 app.listen(process.env.APP_PORT, ()=> {
     console.log('server up and running on port...')

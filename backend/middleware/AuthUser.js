@@ -16,3 +16,17 @@ export const verifyUser = async(req,res,next) => {
 }
 
 //middleware ini digunakan untuk semua login
+
+
+export const adminOnly = async(req,res,next) => {
+    const user = await Users.findOne({
+        where: {
+            uuid: req.session.userId
+        }
+    });
+    if(!user) return res.status(404).json({msg:"User tidak ditemukan"})
+    if(user.role !== "admin") return res.status(403).json({msg:"Akses ditolak"})
+    next()
+}
+
+//middleware untuk membatasi akun Admin dan akun User

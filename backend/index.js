@@ -4,17 +4,21 @@ import session from "express-session"
 import dotenv from "dotenv";
 import UserRoute from './routes/UserRoute.js'
 import ProductRoute from './routes/ProductRoute.js'
-import db from './config/database.js'
+// // hanya berfungsi untuk sync database secara otomatis
+// import db from './config/database.js'
 
 dotenv.config();
 
-const app = express();
-(async ()=>{
-    await db.sync()
 
-})();
+const app = express();
+
+// // non aktifkan kalau berhasil sync table: berfungsi untuk membuat sync otomatis
+// (async ()=>{
+//     await db.sync()
+// })();
 
 app.use(session({
+    // @ts-ignore
     secret:process.env.SESS_SECRET,
     resave: false,
     saveUninitialized: true,

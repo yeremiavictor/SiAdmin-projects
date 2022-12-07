@@ -1,0 +1,26 @@
+### GET All Data Productss
+GET http://localhost:5000/products
+
+### GET All Data by ID
+GET http://localhost:5000/products/b140d063-6943-499f-bdc1-b49c19284e20
+
+### Create Data
+POST http://localhost:5000/products
+Content-Type: application/json
+
+{
+    "name": "Product 3",
+    "price": "30000"
+}
+
+### Update Data
+PATCH http://localhost:5000/products/d792ea69-b817-4481-bc49-fc81361181be
+Content-Type: application/json
+
+{
+    "name": "Product 3",
+    "price": "30000"
+}
+
+### Delete Data
+DELETE http://localhost:5000/products/b140d063-6943-499f-bdc1-b49c19284e20

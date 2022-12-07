@@ -28,13 +28,14 @@ const Products = db.define('product',{
             notEmpty: true
         }
     },
-    userID:{
+    userId:{
         type:DataTypes.INTEGER,
         allowNull:false,
         validate:{
-            notEmpty: true,
+            notEmpty: true
         }
     },
+
 },{
     freezeTableName:true
 })

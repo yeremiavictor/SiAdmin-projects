@@ -7,6 +7,15 @@ Content-Type: application/json
     "password": "12345678"
 }
 
+### Login untuk Jelata wkwkkw
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email": "coba@gmail.com",
+    "password": "12345678"
+}
+
 ### Me
 Get http://localhost:5000/Me
 

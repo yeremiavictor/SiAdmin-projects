@@ -10,6 +10,18 @@ Content-Type: application/json
     "role": "admin"
 }
 
+### Register User biasa
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "Coba",
+    "email": "coba@gmail.com",
+    "password": "12345678",
+    "confPassword": "12345678",
+    "role": "user"
+}
+
 ### Get All User
 GET http://localhost:5000/users
 

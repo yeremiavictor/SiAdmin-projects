@@ -6,7 +6,7 @@ const EditProduct = () => {
       <div>
         <div>
           <h1 className="title">Product</h1>
-          <h2 className="subtitle">Add New Product</h2>
+          <h2 className="subtitle">Edit Product</h2>
           <div className="card is-shadowless">
             <div className="card-content">
               <div className="content">

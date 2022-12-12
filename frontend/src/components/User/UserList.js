@@ -23,6 +23,9 @@ const UserList = () => {
     <div>
       <h1 className="title">Users</h1>
       <h2 className="subtitle"> Daftar Pengguna</h2>
+      <Link to="/users/add" className="button is-success mb-5">
+        Add
+      </Link>
       <table className="table is-striped is-fullwidth">
         <thead>
           <tr>

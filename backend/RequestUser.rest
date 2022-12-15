@@ -29,11 +29,11 @@ GET http://localhost:5000/users
 GET http://localhost:5000/users/90d13414-ceb9-4aac-8c2c-fcf4ec599952
 
 ### Update User
-PATCH  http://localhost:5000/users/90d13414-ceb9-4aac-8c2c-fcf4ec599952
+PATCH  http://localhost:5000/users/256f9022-e8dd-4ce9-a203-2d8e6fe5d259
 Content-Type: application/json
 
 {
-    "name": "Victor Updated",
+    "name": "Aing Macan",
     "email": "yeremiavictor@gmail.com",
     "password": "",
     "confPassword": "",
